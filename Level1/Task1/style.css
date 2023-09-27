@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ######    Utillity Classes ########  */
+h1 {
+  font-size: 3rem;
+  margin-top: 0.7rem;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0.7rem;
+}
+h3 {
+  font-size: 2.3rem;
+}
+h4 {
+  font-size: 2rem;
+  margin-top: 0.7rem;
+}
+p {
+  font-size: 1.6rem;
+  margin-top: 0.7rem;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+}
+.nav-wrapper,
+.box-wrapper,
+.about-wrapper,
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+.about-heading,
+.services-head,
+.contact-heading {
+  text-align: center;
+  margin: 1rem;
+}
+
+.btn{
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  /* outline: none; */
+  background: linear-gradient(to right, rgba(125, 251, 251, 0.787), rgb(212, 231, 247));;
+border-radius: 2rem;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.btn:hover{
+  font-size: 2.1rem;
+  border: 2px solid rgba(125, 251, 251, 0.787);
+  background: transparent;
+  color: wheat;
+}
+/* ########  NAv BAr Styling  ######## */
+.navbar {
+  padding: 1rem;
+  background: linear-gradient(to right, rgba(125, 251, 251, 0.787), rgb(212, 231, 247));
+  height: 100px;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  font-size: 2.5rem;
+  text-shadow: 0px 0px 1px black;
+  font-weight: 600;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+.nav-items .item {
+  /* display: inline-block; */
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.nav-items .item a {
+  /* display: block; */
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-items .item a:hover {
+  border-bottom: 3px solid crimson;
+}
+.menu {
+  font-size: 3rem;
+  display: none;
+}
+
+/*  #########  Header Styling  */
+
+.header {
+  padding: 15rem 5rem 5rem 5rem;
+  background-image: url('./img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: wheat;
+  min-height: 100vh;
+}
+.text-box {
+  text-align: center;
+  padding: 1rem;
+}
+.img-box img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0px 0px 50px cyan;
+}
+
+/* ############    About Styling ############  */
+#about {
+  padding: 3rem;
+  background: aliceblue;
+}
+.about-wrapper {
+  padding: 2rem;
+  margin: 1rem auto;
+  padding: 5rem;
+  width: 90%;
+}
+
+.about-text {
+  text-align: justify;
+  /* width: 500px; */
+}
+.about-text p {
+  text-align: center;
+}
+.about-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.btn-about:hover{
+  color: black;
+}
+
+/* ########  services Section Styling ##########*/
+
+.services-section {
+  /* border: 2px solid red; */
+  padding: 2rem;
+  background: rgb(4, 3, 26);
+  color: wheat;
+  gap: 10px;
+}
+.services-wrapper {
+  margin: 2rem;
+  padding: 1rem;
+}
+.services {
+  padding: 1rem;
+  background: transparent;
+  text-align: center;
+  border-radius: 2rem;
+  border: 2px solid rgb(86, 81, 81);
+  transition: all 0.3s ease;
+}
+.services p {
+  text-align: justify;
+}
+.services:hover {
+  background: linear-gradient(to top, rgb(86, 81, 81), rgba(0, 0, 0, 0.738));
+}
+
+/* ############   Footer Section Styling ######### */
+.footer-section {
+  padding: 2rem;
+  background-color: aliceblue;
+}
+
+.contact-wrapper {
+  padding-left: 10rem;
+}
+.contact {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+}
+.icon {
+  font-size: 2rem;
+  color: crimson;
+}
+.info {
+  font-size: 1.6rem;
+}
+.txt-gray {
+  color: gray;
+}
+
+.footer-wrapper {
+  text-align: center;
+  margin-top: 3rem;
+}
+.icons {
+  margin-left: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.linkdin {
+  color: rgb(11, 11, 156);
+}
+.git,
+.twitter {
+  color: black;
+}
+
+@media (max-width: 950px) {
+  /* ######  Utility Classes */
+
+  .box-wrapper,
+  .about-wrapper,
+  .services-wrapper {
+    flex-direction: column;
+   
+  }
+
+
+
+
+  /* ##########  NavBAr Responsive ########### */
+  .navbar{
+    position: fixed;
+  }
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    height: 100vh;
+    padding-top: 8rem;
+  }
+  .nav-items .item{
+    margin-top: 2rem;
+  }
+  .nav-items .item a{
+    color: wheat;
+  }
+
+  .menu {
+    display: block;
+    position: relative;
+    z-index: 99;
+    color: wheat;
+  }
+  .active{
+    display: block;
+  }
+}
